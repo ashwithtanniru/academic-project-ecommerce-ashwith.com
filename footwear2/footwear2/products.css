@@ -1,0 +1,242 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar .nav-links li {
+    display: inline;
+}
+
+.navbar .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .nav-links li a:hover {
+    background-color: #555;
+}
+
+/* Sorting and Filtering */
+.filter-sort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #f0f0f0;
+    margin: 10px 0;
+}
+
+.filter-sort select,
+.filter-sort input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Main Product Display */
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.Musical-instruments {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.Musical-instruments h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.Musical-instruments img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.Musical-instruments .price {
+    font-size: 18px;
+    color: #e67e22;
+    margin: 10px 0;
+}
+
+.Musical-instruments .description,
+.Musical-instruments .specifications {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.Musical-instruments button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #e67e22;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.Musical-instruments button:hover {
+    background-color: #d35400;
+}
+
+/* Cart Section */
+#cart-container {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px;
+    text-align: center;
+}
+
+#cart-container h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+#cart-items {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+    text-align: left;
+}
+
+#cart-items li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cart-items img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+#cart-total {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#cart-container button {
+    padding: 10px 20px;
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#cart-container button:hover {
+    background-color: #2ecc71;
+}
+
+/* Video Section */
+.video-container {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.video-container h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.video-container button {
+    padding: 8px 15px;
+    background-color: #2980b9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.video-container button:hover {
+    background-color: #3498db;
+}
+
+/* Reviews Section */
+.review-form h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.review-form form {
+    margin-bottom: 20px;
+}
+
+.review-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    resize: vertical;
+}
+
+.review-form button {
+    padding: 8px 12px;
+    background-color: #e67e22;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.review-form button:hover {
+    background-color: #d35400;
+}
