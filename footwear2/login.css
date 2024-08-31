@@ -1,0 +1,124 @@
+/* Reset some default styles */
+body, h2, p, form, label, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Login Container */
+.login-container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+/* Input Group */
+.input-group {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #555;
+}
+
+.input-group input[type="text"],
+.input-group input[type="password"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Checkbox Group */
+.input-group input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+.input-group label[for="remember-me"] {
+    font-weight: normal;
+    color: #555;
+}
+
+/* Login Button */
+.login-button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 1rem;
+}
+
+.login-button:hover {
+    background-color: #555;
+}
+
+/* Links */
+.forgot-password,
+.signup-prompt {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.forgot-password a,
+.signup-prompt a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.forgot-password a:hover,
+.signup-prompt a:hover {
+    color: #555;
+}
+
+/* Responsive Styles */
+@media (max-width: 500px) {
+    .login-container {
+        padding: 1.5rem;
+    }
+
+    .login-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .input-group input[type="text"],
+    .input-group input[type="password"] {
+        padding: 0.5rem;
+    }
+
+    .login-button {
+        padding: 0.5rem;
+    }
+}

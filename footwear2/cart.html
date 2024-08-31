@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shopping cart for Musical Instruments Store. View and manage your cart items here.">
+    <title>Shopping Cart - Musical Instruments Store</title>
+    <link rel="stylesheet" href="cart.css"> <!-- Link to your external CSS file for cart page -->
+</head>
+<body>
+    <div class="cart-container">
+        <h1>Your Shopping Cart</h1>
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>display</th>
+                    <th>Image</th>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+                <!-- Cart items will be dynamically generated here -->
+            </tbody>
+        </table>
+        <div class="cart-summary">
+            <h3>Cart Summary</h3>
+            <p><strong>Subtotal:</strong> ₹<span id="cart-subtotal">0.00</span></p>
+            <p><strong>Shipping:</strong> Free</p>
+            <p><strong>Total:</strong> ₹<span id="cart-total">0.00</span></p>
+            <button class="checkout-btn" onclick="checkout()">Proceed to Checkout</button>
+        </div>
+
+        <div class="reviews-section">
+            <h2>Product Reviews</h2>
+            <div id="reviews-container">
+                <!-- Reviews will be dynamically generated here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- JavaScript for cart functionality -->
+</body>
+</html>
